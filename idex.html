@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ESCAPIUM</title>
+
+    <!--Підключаємо шрифти-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!--Підключаємо стилі css-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/rooms.css" />
+    <link rel="stylesheet" href="./css/adventage.css" />
+    <link rel="stylesheet" href="./css/reviews.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+
+
+
+
+  </head>
+  <body>
+    <!--Верхня панель навігації-->
+    <div style="background-color: black;">
+    <nav class="conteiner-nav navcss">
+      
+      <!--Логотип робимо як посилання.
+            Коли будемо натискати на логотип нас має перекидати на першу сторінку.
+            Якщо запишемо href="#" - це означає, що перекидає на цю саму сторінку на початок.
+            Якщо записати href="./index.html" - це означає, що перекидає на сторінку з назвою index.html
+            (у нашому випадку це головна сторінка)-->
+      <a href="./index.html" 
+        ><img src="./images/logo.png" alt="" class="logo"/></a
+      >
+
+      <!--Головне меню сайту.
+            Робимо через невпорядкований список, так як у нас 4 однотипні елементи.
+            Всі елементи списку будуть посиланнями, які ведуть на відповідні розділи на сторінці.
+            Тобто, коли будемо натискати на пунк меню, нас буде перекидати на початок цього розділу на сторінці.
+            Для цього використаємо посилання-якір href="#services", де # - це наш якір, 
+            a services - це імʼя нашого розділу, яке ми задаємо у самому розділі через id-->
+      <ul class="menu">
+        <li><a href="#services" class="menu-items">Rooms</a></li>
+        <li><a href="#advantages" class="menu-items">About It</a></li>
+        <li><a href="#reviews" class="menu-items">Testimonials</a></li>
+        <li><a href="#contacts" class="menu-items">Contacts</a></li>
+      </ul>
+    
+    </nav>
+  </div>
+    <!--Хедер або шапка сайту.-->
+    <div class="header-img">
+    <header class="conteiner">
+
+      
+      <!--Текстовий заголовок сайту робимо тегом h1,
+            так як це головний заголовок на нашому сайті-->
+      <h1>Escape<br> in 60 mins?</h1>
+
+
+      <!--Кнопку робимо посиланням, на яке коли натиснемо - перекине до форми.
+            Це посилання також робимо через посилання-якір.-->
+            <div class="second-line">
+            <div class="header-line"></div>
+      <a class="header-link" href="#form">View our rooms!</a>
+      </div>
+    </header>
+    </div>
+
+    <!--Інформація на сторінці записується у тезі main-->
+    <main>
+      <!--Розділ Our Services.
+            Кожен розділ створюємо окремо тегом section.
+            Кожному розділу присвоюємо імʼя через id-->
+            <div style="background-color: RGB(27,27,27);">
+      <section class="conteiner" id="services">
+      
+        
+        <!--Назву розділу створюємо через заголовок h3,
+                тому що це заголовок, а заголовкі h1 та h2 ми уже використали-->
+        <h3 class="section-title">Our rooms</h3>
+
+        <!--Вставляємо зображення тегом img.
+                Так як у нас 4 зображення і це однотипні елементи, 
+                то використаємо невпорядкований список, 
+                де кожен елемент списку - це зображення-->
+
+        
+          <!--У тезі img крім атрибута src, який вказує шлях, 
+                    обовʼязково прописуємо атрибути alt (альтернативний текст), 
+                    width (ширина зображення) та height (висота зображення)-->
+                    <div class="persha">
+          <div class="section-div">
+            <h5 class="block-title">Magic Imporium</h5>
+            <p class="block-text">Aenean turpis dolor, ornare sed imperd id, pulvinar eu massa. Nulla accumsan lorem convallis tellus faucibus, eu laoreet. Sed vitae purus.</p>
+          <a class="readmore" href="#">Read More</a>
+          </div>
+
+            <img src="./images/room-list-1.jpeg" alt="" width="557" height="400" />
+          
+          </div>
+          <div class="persha">
+            <div class="section-div">
+              <h5 class="block-title">Hand Wand</h5>
+              <p class="block-text">Aenean turpis dolor, ornare sed imperd id, pulvinar eu massa. Nulla accumsan lorem convallis tellus faucibus, eu laoreet. Sed vitae purus.</p>
+            <a class="readmore" href="#">Read More</a>
+            </div>
+            <img src="./images/room-list-2.jpeg" alt="" width="557" height="400" />
+          </div>
+          <div class="persha">
+            <div class="section-div">
+              <h5 class="block-title">Ancient Prison</h5>
+              <p class="block-text">Aenean turpis dolor, ornare sed imperd id, pulvinar eu massa. Nulla accumsan lorem convallis tellus faucibus, eu laoreet. Sed vitae purus.</p>
+            <a class="readmore" href="#">Read More</a>
+            </div>
+            <img src="./images/room-list-4.jpeg" alt="" width="557" height="400" />
+          </div>    
+          <div class="persha">
+            <div class="section-div">
+              <h5 class="block-title">Chernobylska Bolnica</h5>
+              <p class="block-text">Aenean turpis dolor, ornare sed imperd id, pulvinar eu massa. Nulla accumsan lorem convallis tellus faucibus, eu laoreet. Sed vitae purus.</p>
+            <a class="readmore" href="#">Read More</a>
+            </div>
+            <img src="./images/room-list-5.jpeg" alt="" width="557" height="400" />
+          </div>
+        
+      </section>
+    </div>
+
+      <!--Розділ Why Chose Us?-->
+      <section id="advantages" style="background-color: rgb(34,34,34);">
+        <div class="conteiner">
+        <h3 class="section-title">How it works?</h3> 
+
+
+
+        <!--Робимо карточку в розділі.
+            Карточок є 4 і це однотипні елементи, тому використовуємо невпорядкований список-->
+        <ul>
+          <!--Кожен елемент списку - це карточка-->
+          <li>
+            <!--Вставляємо іконку в кружечку-->
+            <img  style="display: block; margin: auto; margin-top: 30px;" src="./images/icon 1.png" alt="" width="150" height="170" />
+            
+            <!--Заголовок карточки робимо тегом h4-->
+            <h4 class="perxot-title">You Are Locked In</h4>
+            <!--Nекст карточки робимо абзацом - це тег p-->
+            <p class="perxot-text">
+                You will bring nothing in, but the escape room will be filled with useful and sometimes irrelevant objects.
+            </p>
+          </li>
+          <li>
+            <img style="display: block; margin: auto; margin-top: 30px;" src="./images/icon 2.png" alt="" width="150" height="170" />
+            <h4 class="perxot-title">Advantage Name</h4>
+            <p class="perxot-text">
+              Porta nibh venenatis cras sed felis eget velit aliquet sagittis id
+              consectetur purus ut.
+            </p>
+          </li>
+
+          <li>
+            <img style="display: block; margin: auto; margin-top: 30px;" src="./images/icon 3.png" alt="" width="150" height="170" />
+            <h4 class="perxot-title">Advantage Name</h4>
+            <p class="perxot-text">
+              Porta nibh venenatis cras sed felis eget velit aliquet sagittis id
+              consectetur purus ut.
+            </p>
+          </li>
+
+        </ul>
+      </div>
+      </section>
+
+      <!--Розділ Reviews-->
+      <section class="conteiner" id="reviews">
+        <h3 class="section-title" style="color: black;">Testimonials</h3>
+
+        <!--Карточки робимо невпорядкованим списком-->
+        <ul class="chmonya-flex">
+          <li class="chmonya-block" style="margin-right: 120px; ">
+            <p class="chmonya">
+              "This place is a blast, especially for groups! I loved seeing how group members of different personalities approached the puzzles."
+            </p>
+            <img style="display: block; margin: auto;" src="./images/comment-avatar-2.png" alt="" />
+            <p class="chmonya-name">Tatiana Govnaedivna</p>
+          </li>
+
+          <li class="chmonya-block">
+            <p class="chmonya">
+              "My family and I had a spectacular experience here and they are above and beyond in customer service and entertainment."
+            </p>
+            <img style="display: block; margin: auto;" src="./images/comment-avatar-1.png" alt="" />
+            <p class="chmonya-name">Niggar Vasilevich</p>
+          </li>
+        </ul>
+      </section>
+
+      <!--Розділ Contacts-->
+      <div style="background-color: RGB(27,27,27);">
+      <section class="conteiner" id="contacts">
+        <h3 class="section-title">Contacts</h3>
+
+        <div style="display: flex; justify-content: space-between;">
+    <div style="width: 300px; margin-right: 30px;">
+  <h4 class="contact-subtitle">Get in Touch</h4>    
+  <p class="text-cont" style="margin-left: 0;">If you are interested in working with us, please get in touch</p>
+  <div class="contact-element">
+  <img src="./images/mapa.png" alt="" />
+  <p class="text-cont">2390 RoadHill St., Suite 100
+    North Downtown, NY 82153
+    </p>
+  </div>
+    <div class="contact-element">
+    <img src="./images/cap telefonu.png" alt="" />
+    <p class="text-cont">+1800 900 1248</p>
+    </div>
+    <div class="contact-element">
+    <img src="./images/mail.png" alt="" />
+    <p class="text-cont">info@escapium.com</p>
+    </div>  
+  </div>
+
+<div>
+    <h4 class="contact-subtitle">Contact Form</h4>
+    <from>
+      <input class="form-elemunt" type="text" id="name" placeholder="Name" />
+      <input class="form-elemunt" type="email" id="mail" placeholder="Email Address" />
+      <textarea name="message" rows="5" cols="5" placeholder="Your Massage..." ></textarea>
+      <button class="chmonya-btn" type="button" onclick="alert('you eat rokaka')">Send Massage</button>
+    </from>
+  </div>
+  </div>
+</div>
+      </section>
+    </main>
+
+    <!--Футер (підвал) сайту-->
+    <footer>
+      <div class="conteiner">
+      <!--Меню підвалу.
+            Коли натискаємо на елемент меню, нас перекидає на початок відповідного розділу.
+            Маємо 4 однотипні елементи, тому робимо через невпорядкований список.-->
+      <ul style="display: flex; justify-content: space-between;"> 
+        <li><a class="ananas" href="#services">Rooms</a></li>
+        <li><a class="ananas" href="#advantages">About It</a></li>
+        <li><a class="ananas" href="#reviews">Testimonials</a></li>
+        <li><a class="ananas" href="#contacts">Contacts</a></li>
+      </ul>
+
+      
+    <p class="rokaka-futer">Developed By Rokaka Over Heaven</p>
+  </div>
+    </footer>
+  </body>
+</html>

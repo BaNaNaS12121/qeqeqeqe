@@ -1,0 +1,27 @@
+body {
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.conteiner-nav {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
